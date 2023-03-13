@@ -1,0 +1,52 @@
+// MAKEHELP.BAT generated Help Map file.  Used by HFVEXPLORER.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_VIEW_LARGEICONS                     0x18004
+HID_VIEW_SMALLICONS                     0x18005
+HID_VIEW_LIST                           0x18006
+HID_VIEW_DETAILS                        0x18007
+HID_VIEW_OPTIONS                        0x18008
+HID_VIEW_REFRESH                        0x18009
+HID_TOOLS_FIND                          0x1800A
+HID_TOOLS_NEW_BROWSER                   0x18010
+HID_FILE_NEWVOLUME                      0x18012
+HID_FILE_VOLUMETOFLOPPY                 0x18013
+HID_FILE_VOLUMEFROMFLOPPY               0x18014
+HID_TOOLS_DUMPCDDEBUG                   0x18015
+HID_CD_EJECT_RELOAD                     0x18016
+HID_CD_EJECT_EJECT                      0x18017
+HID_EDIT_LABEL                          0x18018
+HID_VIEW_MAC_WINDOW                     0x1801B
+HID_EDIT_COPY_APPEND                    0x18020
+HID_EDIT_CUT_APPEND                     0x18021
+HID_FILE_EJECT                          0x18022
+HID_FILE_RELOAD                         0x18023
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_HFVEXPTYPE                         0x20081
+HIDR_MAINFRAME_SAVE                     0x20081
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_OPTIONS_PAGE_1                     0x20086
+HIDD_OPTIONS_PAGE_2                     0x20087
+HIDD_OPTIONS_PAGE_3                     0x20088
+HIDD_OPTIONS_PAGE_4                     0x20089
+HIDD_OPTIONS_PAGE_5                     0x2008A
+HIDD_OPTIONS_PAGE_6                     0x2008B
+HIDD_ASK_NEW_DIR                        0x20097
+HIDD_ASK_NEW_VOLUME                     0x20098
+HIDD_VOLUME_TO_FLOPPY                   0x20099
+HIDD_ASK_DUMP                           0x2009C
+HIDD_HFS_ITEM_PROPERTIES                0x2009D
+HIDD_DYNAMIC_COPYMODE_SELECT            0x2009F
+HIDD_FILETYPE_MAPPINGS                  0x200A2
+HIDD_OPTIONS_PAGE_7                     0x200A3
+HIDD_OPTIONS_PAGE_8                     0x200A4
+HIDD_OPTIONS_PAGE_9                     0x200A6
+HIDD_STATIC                             0x203FF
+ 
+// Frame Controls (IDW_*) 

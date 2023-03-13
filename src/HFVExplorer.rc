@@ -1,0 +1,1358 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_HFVEXPTYPE          ICON    DISCARDABLE     "res\\HFVExplorerDoc.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\idr_hfve.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_MAINFRAME_SAVE      BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEWVOLUME
+    BUTTON      ID_FILE_OPEN
+    SEPARATOR
+    BUTTON      ID_FILE_VOLUMEFROMFLOPPY
+    BUTTON      ID_FILE_VOLUMETOFLOPPY
+    SEPARATOR
+    BUTTON      ID_CD_EJECT_RELOAD
+    BUTTON      ID_CD_EJECT_EJECT
+    SEPARATOR
+    BUTTON      ID_TOOLS_BURN
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_CUT_APPEND
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_COPY_APPEND
+    SEPARATOR
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_VIEW_LARGEICONS
+    BUTTON      ID_VIEW_SMALLICONS
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+    BUTTON      ID_VIEW_MAC_WINDOW
+    SEPARATOR
+    BUTTON      ID_TOOLS_FIND
+    BUTTON      ID_VIEW_OPTIONS
+END
+
+IDR_MAINFRAME_SAVE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEWVOLUME
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_CD_EJECT_RELOAD
+    BUTTON      ID_CD_EJECT_EJECT
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    SEPARATOR
+    BUTTON      ID_VIEW_LARGEICONS
+    BUTTON      ID_VIEW_SMALLICONS
+    BUTTON      ID_VIEW_LIST
+    BUTTON      ID_VIEW_DETAILS
+    SEPARATOR
+    BUTTON      ID_TOOLS_FIND
+    BUTTON      ID_VIEW_OPTIONS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Format &new volume...",       ID_FILE_NEWVOLUME
+        MENUITEM "&Open volume...\tCtrl+O",     ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Write volume to floppy...",  ID_FILE_VOLUMETOFLOPPY
+        MENUITEM "&Read volume from floppy...", ID_FILE_VOLUMEFROMFLOPPY
+        MENUITEM SEPARATOR
+        MENUITEM "&Eject media\tCtrl+E",        ID_FILE_EJECT
+        MENUITEM "&Reload media\tCtrl+R",       ID_FILE_RELOAD
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Cut Append\tCtrl+Shift+X",    ID_EDIT_CUT_APPEND
+        MENUITEM "Copy Append\tCtrl+Shift+C",   ID_EDIT_COPY_APPEND
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "Status &Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Lar&ge Icons",                ID_VIEW_LARGEICONS
+        MENUITEM "S&mall Icons",                ID_VIEW_SMALLICONS
+        MENUITEM "&List",                       ID_VIEW_LIST
+        MENUITEM "&Details",                    ID_VIEW_DETAILS
+        MENUITEM "&Finder view",                ID_VIEW_MAC_WINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+        MENUITEM "&Options...",                 ID_VIEW_OPTIONS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Find...\tF3",                ID_TOOLS_FIND
+        MENUITEM "New browser\tCtrl+Enter",     ID_TOOLS_NEW_BROWSER
+        MENUITEM SEPARATOR
+        MENUITEM "Dump CD to file ...",         ID_TOOLS_DUMPCDDEBUG
+        MENUITEM "Burn CDR/CDRW ...",           ID_TOOLS_BURN
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About HFV Explorer...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY_APPEND,    VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "E",            ID_FILE_EJECT,          VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_FILE_RELOAD,         VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_EDIT_LABEL,          VIRTKEY, NOINVERT
+    VK_F3,          ID_TOOLS_FIND,          VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT_APPEND,     VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPTIONS_PAGE_1 DIALOG DISCARDABLE  0, 0, 246, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Always mount all HFV volumes",IDC_OPTIONS_MOUNT_ALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,21,137,10
+    CONTROL         "Check for Mac floppies at startup",
+                    IDC_OPTIONS_STARTUP_FLOPPIES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,38,122,10
+    CONTROL         "Check for Mac CD's at startup",IDC_OPTIONS_STARTUP_CDS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,51,122,10
+    CONTROL         "Check for other Mac media at startup",
+                    IDC_OPTIONS_STARTUP_HDS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,64,146,10
+    COMBOBOX        IDC_DOSICONS,26,92,72,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_FAT_ICON_TIME_LIMIT,118,92,41,14,ES_AUTOHSCROLL
+    CONTROL         "Patch to enable HFS/hybrid CD's (Win95/98)",
+                    IDC_OPTIONS_PATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    25,116,165,10
+    LTEXT           "Show DOS icons:",IDC_STATIC,26,82,67,8
+    LTEXT           "Revert to ""No Icons"" after (secs):",IDC_STATIC,118,82,
+                    109,8
+    COMBOBOX        IDC_FONT,50,135,99,95,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Font:",IDC_STATIC,26,136,21,8
+    COMBOBOX        IDC_PSIZE,189,135,28,95,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Size:",IDC_STATIC,166,136,19,8
+    CONTROL         "Font character set is SJIS (Japanese)",
+                    IDC_OPTIONS_IS_FONT_SJIS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,160,147,10
+END
+
+IDD_OPTIONS_PAGE_2 DIALOG DISCARDABLE  0, 0, 246, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Copying files"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "File conversions when copying from HFS file system to DOS file systems:",
+                    IDC_STATIC,36,18,177,20
+    COMBOBOX        IDC_COPYOUT_MODE,35,40,126,105,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File conversions when copying from DOS file systems to HFS file system:",
+                    IDC_STATIC,36,71,180,20
+    COMBOBOX        IDC_COPYIN_MODE,35,93,126,105,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         " Check for AppleDouble",IDC_COPYIN_APPLEDOUBLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,38,111,104,10
+    PUSHBUTTON      """Raw copy"" file type mappings...",IDC_COPY_MAP,62,160,
+                    122,14
+    LTEXT           "Mappings between HFS ""type""/""creator"" info and DOS file name extensions:",
+                    IDC_STATIC,36,138,180,20
+END
+
+IDD_OPTIONS_PAGE_3 DIALOG DISCARDABLE  0, 0, 246, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File attributes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Specify here how to relate to different file system attributes.",
+                    IDC_STATIC,54,28,142,24
+    CONTROL         "Show invisible Mac files",IDC_SHOW_INVISIBLE_MAC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,56,60,133,10
+    CONTROL         "Show invisible Windows files",IDC_SHOW_INVISIBLE_PC,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,56,78,133,10
+    CONTROL         "Protect locked Mac files",IDC_PROTECT_LOCKED_MAC,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,56,96,133,10
+    CONTROL         "Protect locked Windows files",IDC_PROTECT_LOCKED_PC,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,56,
+                    114,133,10
+END
+
+IDD_OPTIONS_PAGE_4 DIALOG DISCARDABLE  0, 0, 246, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shortcuts"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COPT4_DEFAULT_EMULATOR,57,66,116,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default emulator (Launched when you hit ""Enter"" or double-click a document or an application)",
+                    IDC_STATIC,57,48,149,18
+    COMBOBOX        IDC_COPT4_LINK_NAME_STYLE,57,120,116,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Link sample (applies to all emulators):",IDC_STATIC,58,
+                    110,130,8
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 258, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DSK/HFV Explorer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,14,20,20
+    LTEXT           "DSK/HFV Explorer  version 1.3.1",IDC_STATIC,39,13,156,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1997-1999 Anygraaf Oy. All rights reserved.",
+                    IDC_STATIC,39,25,205,8
+    DEFPUSHBUTTON   "OK",IDOK,197,7,54,15,WS_GROUP
+    LTEXT           "This program is freeware.   Anygraaf takes no responsibility of any damage caused by this program. Use at your own risk.",
+                    IDC_STATIC,39,56,194,19
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,38,51,191,1
+    LTEXT           "vMac is a copyright of vMac development team.",
+                    IDC_STATIC,39,84,182,11
+    LTEXT           "Executor © is a copyright of ARDI, Inc.",IDC_STATIC,39,
+                    96,161,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,38,76,191,1
+    LTEXT           "Portions of the code is from HFS tools by Marcus Better, original copyright by Robert Leslie, GNU GPL licensing terms apply (see file COPYING in distribution archive).",
+                    IDC_STATIC,39,109,198,27
+    LTEXT           "Resource bundle cache code from ARDI Browser.",
+                    IDC_STATIC,39,139,180,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,38,176,191,1
+    LTEXT           "Bug reports to: lpesonen@nic.fi (Lauri Pesonen)",
+                    IDC_STATIC,39,37,198,8
+    LTEXT           "HFS CD partition table handling from Paul Hargrove's Linux sources. GNU GPL as well.",
+                    IDC_STATIC,39,153,182,19
+END
+
+IDD_ASK_DUMP DIALOG DISCARDABLE  0, 0, 234, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dump CD to file"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_DUMP_PATH,7,23,220,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DUMP_START,7,55,87,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DUMP_BLOCKS,131,55,96,13,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",IDC_BROWSE_DUMP,190,7,37,12
+    DEFPUSHBUTTON   "OK",IDOK,64,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,124,82,50,14
+    LTEXT           "File name:",IDC_STATIC,7,13,56,8
+    LTEXT           "Start offset (decimal or hex):",IDC_STATIC,7,45,103,8
+    LTEXT           "Blocks (decimal or hex):",IDC_STATIC,131,45,96,8
+END
+
+IDD_DYNAMIC_COPYMODE_SELECT DIALOG DISCARDABLE  0, 0, 192, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select copy mode"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COPY_MODE,3,32,186,105,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         " Check for AppleDouble",IDC_COPYIN_APPLEDOUBLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,50,110,10
+    DEFPUSHBUTTON   "OK",IDOK,15,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,65,50,14
+    LTEXT           "Static",IDC_COPYING_FNAME,3,3,186,23,SS_SUNKEN
+    PUSHBUTTON      "OK to &All",IDOKALL,71,65,50,14
+END
+
+IDD_FILETYPE_MAPPINGS DIALOGEX 0, 0, 278, 190
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION """Raw copy"" file type mappings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Mapping enabled",IDC_FILETYPE_ENABLED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,14,92,10
+    LISTBOX         IDC_FILETYPE_LIST,7,39,199,101,LBS_SORT | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_FILETYPE_COMMENT,7,143,199,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILETYPE_DOS,9,170,24,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Strip",IDC_FILETYPE_STRIP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,38,171,26,10
+    EDITTEXT        IDC_FILETYPE_TYPE,70,170,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILETYPE_CREATOR,106,170,30,13,ES_AUTOHSCROLL
+    CONTROL         "HFS -> DO&S",IDC_FILETYPE_HFS2FAT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,146,160,58,10
+    CONTROL         "DOS -> &HFS",IDC_FILETYPE_FAT2HFS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,146,173,55,10
+    DEFPUSHBUTTON   "OK",IDOK,213,7,58,14
+    PUSHBUTTON      "Cancel",IDCANCEL,213,23,58,14
+    PUSHBUTTON      "&Import...",IDC_FILETYPE_IMPORT,213,46,58,14
+    PUSHBUTTON      "Export &selected...",IDC_FILETYPE_EXPORT_SELECTED,213,
+                    62,58,14
+    PUSHBUTTON      "E&xport All...",IDC_FILETYPE_EXPORT,213,78,58,14
+    PUSHBUTTON      "Select N&one",IDC_FILETYPE_SELECT_ALL2,213,99,58,14
+    PUSHBUTTON      "Select &All",IDC_FILETYPE_SELECT_ALL,213,115,58,14
+    PUSHBUTTON      "Du&plicate",IDC_FILETYPE_DUPLICATE,213,137,58,14
+    PUSHBUTTON      "&New",IDC_FILETYPE_NEW,213,153,58,14
+    PUSHBUTTON      "&Delete",IDC_FILETYPE_DELETE,213,169,58,14
+    LTEXT           "DOS extension:",IDC_STATIC,9,159,57,8
+    LTEXT           "Type:",IDC_STATIC,70,159,31,8
+    LTEXT           "Creator:",IDC_STATIC,106,159,34,8
+    LTEXT           "DOS extension:",IDC_STATIC,9,29,56,8
+    LTEXT           "Type:",IDC_STATIC,70,29,31,8
+    LTEXT           "Creator:",IDC_STATIC,106,29,31,8
+    LTEXT           "->DOS",IDC_STATIC,141,29,26,8
+    LTEXT           "->HFS",IDC_STATIC,171,29,26,8
+    PUSHBUTTON      "?",IDC_FILETYPE_HELP,180,7,24,14
+    LTEXT           "",IDC_FILETYPE_CONFLICT,101,14,53,8
+END
+
+IDD_OPTIONS_PAGE_7 DIALOG DISCARDABLE  0, 0, 246, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "vMac Win32"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COPT7_VMAC_PATH,11,30,192,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COPT7_VMAC_SYSTEM_FILE_PATH,11,55,192,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_COPT7_VMAC_STARTUP_FOLDER_NAME,11,80,192,13,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Install files required by vMac",IDC_COPT7_VMAC_INSTALL,
+                    12,104,115,14
+    COMBOBOX        IDC_COPT7_LAUNCH_METHOD,15,141,96,42,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Remove alias after launching",IDC_USE_REMOVER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,163,192,10
+    PUSHBUTTON      ">>",IDC_COPT7_BROWSE_VMAC_PATH,213,30,22,14
+    PUSHBUTTON      ">>",IDC_COPT7_BROWSE_VMAC_SYSTEM_FILE_PATH,213,55,22,14
+    PUSHBUTTON      ">>",IDC_COPT7_BROWSE_VMAC_STARTUP_FOLDER_NAME,213,80,22,
+                    14,WS_DISABLED
+    LTEXT           "vMac Win32 path:",IDC_STATIC,11,22,151,8
+    LTEXT           "vMac system volume file (System version 7 or later):",
+                    IDC_STATIC,11,47,190,8
+    LTEXT           "vMac ""startup item""s folder name:",IDC_STATIC,11,71,
+                    151,8
+    LTEXT           "Launch method (please use Alias method):",IDC_STATIC,15,
+                    130,174,8
+END
+
+IDD_OPTIONS_PAGE_8 DIALOG DISCARDABLE  0, 0, 246, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shapeshifter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COPT8_SHAPESHIFTER_PATH,7,16,192,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COPT8_SHAPESHIFTER_SYSTEM_FILE_PATH,7,45,192,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_COPT8_SHAPESHIFTER_STARTUP_FOLDER_NAME,7,77,192,13,
+                    ES_AUTOHSCROLL
+    CONTROL         "Remove alias after launching",
+                    IDC_COPT8_SHAPESHIFTER_USE_REMOVER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,95,192,10
+    EDITTEXT        IDC_COPT8_SHAPESHIFTER_PREFERENCES_FILE_PATH,7,124,192,
+                    13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COPT8_SHAPESHIFTER_AMIGA_VOLUME_NAME,7,169,192,13,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",IDC_COPT8_BROWSE_SHAPESHIFTER_PATH,209,16,22,14
+    PUSHBUTTON      ">>",IDC_COPT8_BROWSE_SHAPESHIFTER_SYSTEM_FILE_PATH,209,
+                    45,22,14
+    PUSHBUTTON      ">>",IDC_COPT8_BROWSE_SHAPESHIFTER_STARTUP_FOLDER_NAME,
+                    209,77,22,14,WS_DISABLED
+    PUSHBUTTON      ">>",IDC_COPT8_BROWSE_SHAPESHIFTER_PREFERENCES_FILE_PATH,
+                    209,124,22,14
+    PUSHBUTTON      ">>",IDC_COPT8_BROWSE_SHAPESHIFTER_AMIGA_VOLUME_NAME,209,
+                    169,22,14,WS_DISABLED
+    LTEXT           "Command line to launch WinUAE/Shapeshifter:",IDC_STATIC,
+                    7,7,186,8
+    LTEXT           "Shapeshifter system volume file (System version 7 or later):",
+                    IDC_STATIC,7,36,195,8
+    LTEXT           "Shapeshifter ""startup item""s folder name:",IDC_STATIC,
+                    7,68,180,8
+    LTEXT           "Path to ""Shapeshifter Prefs"" file (PLEASE BACKUP ORIGINAL):",
+                    IDC_STATIC,7,115,200,8
+    LTEXT           "Amiga volume name. All HFV files must be in the root of this Amiga volume. Make a new mapping in WinUAE if you need to:",
+                    IDC_STATIC,7,149,200,18
+END
+
+IDD_OPTIONS_PAGE_6 DIALOG DISCARDABLE  0, 0, 246, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Executor Win32"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COPT6_EXECUTOR_WIN32_PATH,25,48,192,13,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_COPT6_BROWSE_EXECUTOR_WIN32_PATH,26,70,
+                    56,14
+    LTEXT           "Executor Win32 path and parameters:",IDC_STATIC,25,40,
+                    151,8
+END
+
+IDD_OPTIONS_PAGE_9 DIALOG DISCARDABLE  0, 0, 246, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fusion DOS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COPT9_FUSION_SYSTEM_FILE_PATH,7,16,192,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_COPT9_FUSION_STARTUP_FOLDER_NAME,7,42,192,13,
+                    ES_AUTOHSCROLL
+    CONTROL         "Remove alias after launching",
+                    IDC_COPT9_FUSION_USE_REMOVER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,58,192,10
+    EDITTEXT        IDC_COPT9_FUSION_BATCH_PATH,7,177,192,13,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",IDC_COPT9_BROWSE_FUSION_SYSTEM_FILE_PATH,209,16,22,
+                    14
+    PUSHBUTTON      ">>",IDC_COPT9_BROWSE_FUSION_STARTUP_FOLDER_NAME,209,42,
+                    22,14,WS_DISABLED
+    PUSHBUTTON      ">>",IDC_COPT9_BROWSE_FUSION_BATCH_PATH,209,177,22,14
+    LTEXT           "Fusion system volume file (System version 7 or later):",
+                    IDC_STATIC,7,7,184,8
+    LTEXT           "Fusion ""startup item""s folder name:",IDC_STATIC,7,32,
+                    151,8
+    LTEXT           "You need to setup a multi-boot environment and tweak all the Fusion parameters in Fusion setup. Since the demo allows only one HFV volume file, the application/document launched should be in the system volume.",
+                    IDC_STATIC,7,72,232,35
+    LTEXT           "HFVExplorer just creates an alias to the target and reboots Windows, expecting you to boot into DOS and launch Fusion. Tweaking Autoexec.bat, Boot.ini and Config.sys automatically would be far too complicated.",
+                    IDC_STATIC,7,133,232,32
+    LTEXT           "If you have the retail version of Fusion, this restriction should not apply, just make sure that you boot from the HFV file set above.",
+                    IDC_STATIC,7,109,232,20
+    LTEXT           "Batch file or program to run before rebooting (may be left empty):",
+                    IDC_STATIC,7,168,205,8
+END
+
+IDD_OPTIONS_PAGE_5 DIALOG DISCARDABLE  0, 0, 246, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Executor DOS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COPT5_EXECUTOR_DOS_PATH,25,48,192,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_COPT5_BROWSE_EXECUTOR_DOS_PATH,26,70,56,
+                    14
+    LTEXT           "Executor DOS path and parameters:",IDC_STATIC,25,40,151,
+                    8
+END
+
+IDD_OPTIONS_PAGE_10 DIALOG DISCARDABLE  0, 0, 246, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HPBurner"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_COPT10_HPBURNER_PATH,7,19,192,13,ES_AUTOHSCROLL
+    PUSHBUTTON      ">>",IDC_COPT10_HPBURNER_BROWSE,209,19,22,14
+    LTEXT           "HPBurner location:",IDC_STATIC,7,9,184,8
+    LTEXT           "You can burn the selected HFS volume file to CDR or CDRW using the ""Burn CD"" command in Tools menu, if you have all of the following:",
+                    IDC_STATIC,7,43,232,25
+    LTEXT           "HPBurner external application. The full path must be defined in the field above.",
+                    IDC_STATIC,20,74,195,19
+    LTEXT           "ASPI layer from Adaptec.",IDC_STATIC,20,98,219,14
+    LTEXT           "HP CD-Writer+ 7100. Probably works with HP models 7xxx and Phillips 36xx, but these are not tested.",
+                    IDC_STATIC,20,116,195,21
+    LTEXT           "Please DO NOT send me requests to support other models. HPBurner may or may not support some other models in the future.",
+                    IDC_STATIC,7,146,195,25
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,1,0
+ PRODUCTVERSION 1,3,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Cookie of the day: Anthony's Law of Force: ""Don't force it; get a larger hammer.""\0"
+            VALUE "CompanyName", "Anygraaf Oy. Company home: http:/www.anygraaf.fi, HFVExplorer home: http:/www.clinet.fi/~lpesonen\0"
+            VALUE "FileDescription", "HFVEXPLORER Application\0"
+            VALUE "FileVersion", "1, 3, 1, 0\0"
+            VALUE "InternalName", "HFVEXPLORER\0"
+            VALUE "LegalCopyright", "Copyright © 1997-1999 Anygraaf Oy\0"
+            VALUE "OriginalFilename", "HFVEXPLORER.EXE\0"
+            VALUE "ProductName", "HFVEXPLORER Application\0"
+            VALUE "ProductVersion", "1, 3, 1, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OPTIONS_PAGE_1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_OPTIONS_PAGE_2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_OPTIONS_PAGE_3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_OPTIONS_PAGE_4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_ASK_DUMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DYNAMIC_COPYMODE_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 189
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_FILETYPE_MAPPINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_OPTIONS_PAGE_7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_OPTIONS_PAGE_8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_OPTIONS_PAGE_6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_OPTIONS_PAGE_9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_OPTIONS_PAGE_5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_OPTIONS_PAGE_10, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OPTIONS_PAGE_2 DLGINIT
+BEGIN
+    IDC_COPYOUT_MODE, 0x403, 34, 0
+0x7541, 0x6f74, 0x616d, 0x6974, 0x2c63, 0x6c20, 0x7465, 0x7420, 0x6568, 
+0x7020, 0x6f72, 0x7267, 0x6d61, 0x6420, 0x6365, 0x6469, 0x0065, 
+    IDC_COPYOUT_MODE, 0x403, 12, 0
+0x614d, 0x4263, 0x6e69, 0x7261, 0x2079, 0x0032, 
+    IDC_COPYOUT_MODE, 0x403, 7, 0
+0x6942, 0x686e, 0x7865, "\000" 
+    IDC_COPYOUT_MODE, 0x403, 28, 0
+0x6554, 0x7478, 0x7720, 0x7469, 0x2068, 0x7263, 0x6c2f, 0x2066, 0x6f63, 
+0x766e, 0x7265, 0x6973, 0x6e6f, 0x0073, 
+    IDC_COPYOUT_MODE, 0x403, 25, 0
+0x6152, 0x2077, 0x6f63, 0x7970, 0x202c, 0x6164, 0x6174, 0x6620, 0x726f, 
+0x206b, 0x6e6f, 0x796c, "\000" 
+    IDC_COPYOUT_MODE, 0x403, 29, 0
+0x6152, 0x2077, 0x6f63, 0x7970, 0x202c, 0x6572, 0x6f73, 0x7275, 0x6563, 
+0x6620, 0x726f, 0x206b, 0x6e6f, 0x796c, "\000" 
+    IDC_COPYOUT_MODE, 0x403, 31, 0
+0x6f44, 0x276e, 0x2074, 0x6e6b, 0x776f, 0x202c, 0x7361, 0x206b, 0x656d, 
+0x7720, 0x6568, 0x206e, 0x656e, 0x6465, 0x6465, "\000" 
+    IDC_COPYIN_MODE, 0x403, 34, 0
+0x7541, 0x6f74, 0x616d, 0x6974, 0x2c63, 0x6c20, 0x7465, 0x7420, 0x6568, 
+0x7020, 0x6f72, 0x7267, 0x6d61, 0x6420, 0x6365, 0x6469, 0x0065, 
+    IDC_COPYIN_MODE, 0x403, 12, 0
+0x614d, 0x4263, 0x6e69, 0x7261, 0x2079, 0x0032, 
+    IDC_COPYIN_MODE, 0x403, 7, 0
+0x6942, 0x686e, 0x7865, "\000" 
+    IDC_COPYIN_MODE, 0x403, 28, 0
+0x6554, 0x7478, 0x7720, 0x7469, 0x2068, 0x7263, 0x6c2f, 0x2066, 0x6f63, 
+0x766e, 0x7265, 0x6973, 0x6e6f, 0x0073, 
+    IDC_COPYIN_MODE, 0x403, 22, 0
+0x6152, 0x2077, 0x6f63, 0x7970, 0x2d20, 0x203e, 0x6164, 0x6174, 0x6620, 
+0x726f, 0x006b, 
+    IDC_COPYIN_MODE, 0x403, 26, 0
+0x6152, 0x2077, 0x6f63, 0x7970, 0x2d20, 0x203e, 0x6572, 0x6f73, 0x7275, 
+0x6563, 0x6620, 0x726f, 0x006b, 
+    IDC_COPYIN_MODE, 0x403, 31, 0
+0x6f44, 0x276e, 0x2074, 0x6e6b, 0x776f, 0x202c, 0x7361, 0x206b, 0x656d, 
+0x7720, 0x6568, 0x206e, 0x656e, 0x6465, 0x6465, "\000" 
+    0
+END
+
+IDD_OPTIONS_PAGE_1 DLGINIT
+BEGIN
+    IDC_DOSICONS, 0x403, 9, 0
+0x6f4e, 0x4920, 0x6f63, 0x736e, "\000" 
+    IDC_DOSICONS, 0x403, 9, 0
+0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    IDC_DOSICONS, 0x403, 17, 0
+0x6c41, 0x206c, 0x6966, 0x656c, 0x2073, 0x7328, 0x6f6c, 0x2977, "\000" 
+    IDC_PSIZE, 0x403, 2, 0
+0x0038, 
+    IDC_PSIZE, 0x403, 2, 0
+0x0039, 
+    IDC_PSIZE, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_PSIZE, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_PSIZE, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_PSIZE, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_PSIZE, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_PSIZE, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_PSIZE, 0x403, 3, 0
+0x3532, "\000" 
+    0
+END
+
+IDD_DYNAMIC_COPYMODE_SELECT DLGINIT
+BEGIN
+    IDC_COPY_MODE, 0x403, 34, 0
+0x7541, 0x6f74, 0x616d, 0x6974, 0x2c63, 0x6c20, 0x7465, 0x7420, 0x6568, 
+0x7020, 0x6f72, 0x7267, 0x6d61, 0x6420, 0x6365, 0x6469, 0x0065, 
+    IDC_COPY_MODE, 0x403, 12, 0
+0x614d, 0x4263, 0x6e69, 0x7261, 0x2079, 0x0032, 
+    IDC_COPY_MODE, 0x403, 7, 0
+0x6942, 0x686e, 0x7865, "\000" 
+    IDC_COPY_MODE, 0x403, 28, 0
+0x6554, 0x7478, 0x7720, 0x7469, 0x2068, 0x7263, 0x6c2f, 0x2066, 0x6f63, 
+0x766e, 0x7265, 0x6973, 0x6e6f, 0x0073, 
+    IDC_COPY_MODE, 0x403, 20, 0
+0x6152, 0x2077, 0x6f63, 0x7970, 0x202c, 0x6164, 0x6174, 0x6620, 0x726f, 
+0x006b, 
+    IDC_COPY_MODE, 0x403, 24, 0
+0x6152, 0x2077, 0x6f63, 0x7970, 0x202c, 0x6572, 0x6f73, 0x7275, 0x6563, 
+0x6620, 0x726f, 0x006b, 
+    0
+END
+
+IDD_OPTIONS_PAGE_4 DLGINIT
+BEGIN
+    IDC_COPT4_DEFAULT_EMULATOR, 0x403, 13, 0
+0x7845, 0x6365, 0x7475, 0x726f, 0x4420, 0x534f, "\000" 
+    IDC_COPT4_DEFAULT_EMULATOR, 0x403, 15, 0
+0x7845, 0x6365, 0x7475, 0x726f, 0x5720, 0x6e69, 0x3233, "\000" 
+    IDC_COPT4_DEFAULT_EMULATOR, 0x403, 11, 0
+0x4d76, 0x6361, 0x5720, 0x6e69, 0x3233, "\000" 
+    IDC_COPT4_DEFAULT_EMULATOR, 0x403, 13, 0
+0x6853, 0x7061, 0x7365, 0x6968, 0x7466, 0x7265, "\000" 
+    IDC_COPT4_DEFAULT_EMULATOR, 0x403, 16, 0
+0x7546, 0x6973, 0x6e6f, 0x4420, 0x534f, 0x6420, 0x6d65, 0x006f, 
+    IDC_COPT4_DEFAULT_EMULATOR, 0x403, 27, 0
+0x7341, 0x6f73, 0x6963, 0x7461, 0x6465, 0x5720, 0x6e69, 0x6f64, 0x7377, 
+0x7020, 0x6f72, 0x7267, 0x6d61, "\000" 
+    IDC_COPT4_LINK_NAME_STYLE, 0x403, 18, 0
+0x4d22, 0x2079, 0x6f44, 0x7563, 0x656d, 0x746e, 0x6c2e, 0x6b6e, 0x0022, 
+
+    IDC_COPT4_LINK_NAME_STYLE, 0x403, 24, 0
+0x4d22, 0x2079, 0x6f44, 0x7563, 0x656d, 0x746e, 0x5720, 0x6e69, 0x3233, 
+0x6c2e, 0x6b6e, 0x0022, 
+    IDC_COPT4_LINK_NAME_STYLE, 0x403, 26, 0
+0x4d22, 0x2079, 0x6f44, 0x7563, 0x656d, 0x746e, 0x2820, 0x6957, 0x336e, 
+0x2932, 0x6c2e, 0x6b6e, 0x0022, 
+    IDC_COPT4_LINK_NAME_STYLE, 0x403, 26, 0
+0x5722, 0x6e69, 0x3233, 0x2d20, 0x4d20, 0x2079, 0x6f44, 0x7563, 0x656d, 
+0x746e, 0x6c2e, 0x6b6e, 0x0022, 
+    0
+END
+
+IDD_OPTIONS_PAGE_7 DLGINIT
+BEGIN
+    IDC_COPT7_LAUNCH_METHOD, 0x403, 22, 0
+0x7355, 0x2065, 0x6c61, 0x6169, 0x6573, 0x2073, 0x6f74, 0x6c20, 0x7561, 
+0x636e, 0x0068, 
+    IDC_COPT7_LAUNCH_METHOD, 0x403, 17, 0
+0x7355, 0x2065, 0x7041, 0x6c70, 0x2065, 0x7665, 0x6e65, 0x7374, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER             CURSOR  DISCARDABLE     "arrow.cur"
+IDC_POINTER_COPY        CURSOR  DISCARDABLE     "arrowcop.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "HFVExplorer\n\nHFVExp\nHFV Files (*.hfv)\n.HFV\nHFVExplorer.Document\nHFVExp Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "HFV Explorer"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select all files and folders\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_LARGEICONS      "Show as large icons\nLarge Icons"
+    ID_VIEW_SMALLICONS      "Show as small icons\nSmall Icons"
+    ID_VIEW_LIST            "Show as list\nList"
+    ID_VIEW_DETAILS         "Show all file details\nDetails"
+    ID_VIEW_OPTIONS         "View and edit program options\nOptions"
+    ID_TOOLS_FIND           "Find in files or folders\nFind"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEWVOLUME       "Formats a floppy or a new volume file\nFormat"
+    ID_FILE_VOLUMETOFLOPPY  "Writes the contents of a volume file to floppy\nWrite floppy"
+    ID_FILE_VOLUMEFROMFLOPPY 
+                            "Creates a new volume file from the contents of a floppy\nRead floppy"
+    ID_CD_EJECT_RELOAD      "Reload selected media\nReload"
+    ID_CD_EJECT_EJECT       "Eject selected media\nEject"
+    ID_VIEW_MAC_WINDOW      "Show as Finder view\nFinder view"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY_APPEND     "Copy the selection and append it on the Clipboard\nCopy Append"
+    ID_EDIT_CUT_APPEND      "Cut the selection and append it on the Clipboard\nCut Append"
+    ID_TOOLS_BURN           "Burn volume file to CDR/CDRW\nBurn CDR/CDRW"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Finnish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FIN)
+#ifdef _WIN32
+LANGUAGE LANG_FINNISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\icon5.ico"
+IDI_ICON6               ICON    DISCARDABLE     "res\\icon6.ico"
+IDI_ICON7               ICON    DISCARDABLE     "res\\icon7.ico"
+IDI_ICON8               ICON    DISCARDABLE     "res\\icon8.ico"
+IDI_ICON12              ICON    DISCARDABLE     "res\\icon12.ico"
+IDI_ICON51              ICON    DISCARDABLE     "res\\icon9.ico"
+IDI_ICON52              ICON    DISCARDABLE     "res\\icon52.ico"
+IDI_ICON53              ICON    DISCARDABLE     "res\\icon53.ico"
+IDI_ICON54              ICON    DISCARDABLE     "res\\icon54.ico"
+IDI_ICON55              ICON    DISCARDABLE     "res\\icon55.ico"
+IDI_ICON9               ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_ICON10              ICON    DISCARDABLE     "res\\icon10.ico"
+IDI_ICON11              ICON    DISCARDABLE     "res\\icon11.ico"
+IDI_ICON13              ICON    DISCARDABLE     "res\\icon13.ico"
+testi                   ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_ICON1_YELLOW        ICON    DISCARDABLE     "res\\icon14.ico"
+IDI_ICON4_YELLOW        ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_ICON51_YELLOW       ICON    DISCARDABLE     "res\\icon56.ico"
+IDI_ICON52_YELLOW       ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_ICON53_YELLOW       ICON    DISCARDABLE     "res\\ico00005.ico"
+IDI_ICON54_YELLOW       ICON    DISCARDABLE     "res\\ico00006.ico"
+IDI_ICON55_YELLOW       ICON    DISCARDABLE     "res\\ico00007.ico"
+IDI_LABEL_PROJECT_2     ICON    DISCARDABLE     "res\\ico00008.ico"
+IDI_LABEL_PROJECT_1     ICON    DISCARDABLE     "res\\label_pr.ico"
+IDI_LABEL_PERSONAL      ICON    DISCARDABLE     "res\\label_pe.ico"
+IDI_LABEL_COOL          ICON    DISCARDABLE     "res\\ico00009.ico"
+IDI_LABEL_IN_PROGRESS   ICON    DISCARDABLE     "res\\label_co.ico"
+IDI_LABEL_HOT           ICON    DISCARDABLE     "res\\label_in.ico"
+IDI_LABEL_ESSENTIAL     ICON    DISCARDABLE     "res\\label_ho.ico"
+IDI_ICON56              ICON    DISCARDABLE     "res\\ico00010.ico"
+IDI_ICON56_YELLOW       ICON    DISCARDABLE     "res\\icon57.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ASK_NEW_DIR DIALOG DISCARDABLE  0, 0, 186, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create new folder"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NEW_DIR_NAME,14,13,156,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,36,34,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,34,50,14
+END
+
+IDD_ASK_NEW_VOLUME DIALOG DISCARDABLE  0, 0, 216, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New volume"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_VOLNAME,16,22,122,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_VOLSIZE_EX,16,60,56,72,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_VOLPATH,14,98,187,73,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">>",IDC_VOLNAME_BROWSE,174,84,28,10
+    DEFPUSHBUTTON   "OK",IDOK,159,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,24,50,14
+    LTEXT           "Volume file path, or floppy selection:",IDC_STATIC,16,
+                    85,145,8
+    LTEXT           "Volume name:",IDC_STATIC,16,12,65,8
+    LTEXT           "Volume size:",IDD_STATIC,16,49,74,8
+END
+
+IDD_VOLUME_TO_FLOPPY DIALOG DISCARDABLE  0, 0, 216, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Volume to Floppy"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      ">>",IDC_VOLNAME_BROWSE,174,55,28,10
+    DEFPUSHBUTTON   "OK",IDOK,159,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,24,50,14
+    LTEXT           "Volume file path:",IDC_STATIC,16,56,145,8
+    COMBOBOX        IDC_DUMP_TO_FLOPPY,67,18,32,43,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Floppy drive:",IDC_STATIC,13,21,48,8
+    EDITTEXT        IDC_VOLPATH,14,70,187,12,ES_AUTOHSCROLL
+END
+
+IDD_HFS_ITEM_PROPERTIES DIALOGEX 0, 0, 375, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Element properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PROP_NAME,58,51,170,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_NODEID,58,67,58,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PROP_PARENTID,58,84,58,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_PROP_CREATED,58,100,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_MODIFIED,170,67,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_BACKUP,170,84,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_X,170,101,27,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_Y,202,101,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_RSIZE,68,135,44,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PROP_DSIZE,68,154,44,13,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_PROP_TYPE,68,171,28,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_CREATOR,68,189,28,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_VALENCE,196,140,58,13,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    EDITTEXT        IDC_PROP_TOP,196,163,27,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_LEFT,228,163,26,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_BOTTOM,196,186,27,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROP_RIGHT,228,186,26,13,ES_AUTOHSCROLL
+    CONTROL         "Directory",IDC_PROP_ISDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,287,27,67,10
+    CONTROL         "Is in Desktop",IDC_PROP_ISINDESKTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,38,74,10
+    CONTROL         "Has colors",IDC_PROP_HASCOLORS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,287,49,73,10
+    CONTROL         "Reserved colors",IDC_PROP_RESERVEDCOLORS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,60,75,10
+    CONTROL         "Req. switch launch",IDC_PROP_REQSWITCHLAUNCH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,71,75,10
+    CONTROL         "Is shared",IDC_PROP_ISSHARED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,287,82,65,10
+    CONTROL         "Has no inits",IDC_PROP_HASNOINITS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,93,80,10
+    CONTROL         "Has been inited",IDC_PROP_HASBEENINITED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,104,77,10
+    CONTROL         "Reserved",IDC_PROP_RESERVED,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,287,115,78,10
+    CONTROL         "Has custom icon",IDC_PROP_HASCUSTOMICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,126,72,10
+    CONTROL         "Is stationery",IDC_PROP_ISSTATIONERY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,137,78,10
+    CONTROL         "Is name-locked",IDC_PROP_ISNAMELOCKED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,148,75,10
+    CONTROL         "Has bundle",IDC_PROP_HASBUNDLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,287,159,76,10
+    CONTROL         "Is invisible",IDC_PROP_ISINVISIBLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,170,72,10
+    CONTROL         "Is alias",IDC_PROP_ISALIAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,287,181,74,10
+    CONTROL         "Is locked",IDC_PROP_ISLOCKED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,287,192,58,10
+    DEFPUSHBUTTON   "OK",IDOK,126,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,217,50,14
+    CTEXT           "WARNING! Changing some of these settings may have\radverse effects. You must know what you are doing.",
+                    IDC_STATIC,41,14,196,21
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,34,7,210,32,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "Name:",IDC_STATIC,16,55,33,8
+    LTEXT           "Node id:",IDC_STATIC,16,71,33,8
+    LTEXT           "Parent id:",IDC_STATIC,16,87,36,8
+    LTEXT           "Created:",IDC_STATIC,16,103,35,8
+    LTEXT           "Modified:",IDC_STATIC,133,71,34,8
+    LTEXT           "Backup:",IDC_STATIC,133,87,35,8
+    LTEXT           "Resource size:",IDC_STATIC,16,137,50,8
+    LTEXT           "Data size:",IDC_STATIC,16,156,47,8
+    LTEXT           "Type:",IDC_STATIC,16,174,45,8
+    LTEXT           "Creator:",IDC_STATIC,16,192,46,8
+    LTEXT           "Items in dir:",IDC_STATIC,142,143,47,8
+    LTEXT           "( x, y ):",IDC_STATIC,133,103,29,8
+    LTEXT           "( top, left ):",IDC_STATIC,142,165,41,8
+    LTEXT           "( bottom, right ):",IDC_STATIC,142,188,52,8
+    GROUPBOX        " Folder ",IDC_STATIC,133,124,134,85
+    GROUPBOX        " File ",IDC_STATIC,7,124,115,85
+    GROUPBOX        " Flags ",IDC_STATIC,275,13,93,196
+    GROUPBOX        " Common ",IDC_STATIC,7,40,260,79
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ASK_NEW_DIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_ASK_NEW_VOLUME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_VOLUME_TO_FLOPPY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_HFS_ITEM_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ASK_NEW_VOLUME DLGINIT
+BEGIN
+    IDC_VOLSIZE_EX, 0x403, 7, 0
+0x3034, 0x2030, 0x426b, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 7, 0
+0x3038, 0x2030, 0x426b, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 8, 0
+0x3431, 0x3034, 0x6b20, 0x0042, 
+    IDC_VOLSIZE_EX, 0x403, 8, 0
+0x3832, 0x3038, 0x6b20, 0x0042, 
+    IDC_VOLSIZE_EX, 0x403, 5, 0
+0x2035, 0x424d, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 6, 0
+0x3031, 0x4d20, 0x0042, 
+    IDC_VOLSIZE_EX, 0x403, 6, 0
+0x3032, 0x4d20, 0x0042, 
+    IDC_VOLSIZE_EX, 0x403, 6, 0
+0x3033, 0x4d20, 0x0042, 
+    IDC_VOLSIZE_EX, 0x403, 6, 0
+0x3035, 0x4d20, 0x0042, 
+    IDC_VOLSIZE_EX, 0x403, 7, 0
+0x3031, 0x2030, 0x424d, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 7, 0
+0x3032, 0x2030, 0x424d, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 7, 0
+0x3033, 0x2030, 0x424d, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 7, 0
+0x3035, 0x2030, 0x424d, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 5, 0
+0x2031, 0x4247, "\000" 
+    IDC_VOLSIZE_EX, 0x403, 5, 0
+0x2032, 0x4247, "\000" 
+    IDC_VOLPATH, 0x403, 19, 0
+0x463c, 0x726f, 0x616d, 0x2074, 0x6c66, 0x706f, 0x7970, 0x4120, 0x3e3a, 
+"\000" 
+    IDC_VOLPATH, 0x403, 19, 0
+0x463c, 0x726f, 0x616d, 0x2074, 0x6c66, 0x706f, 0x7970, 0x4220, 0x3e3a, 
+"\000" 
+    0
+END
+
+IDD_VOLUME_TO_FLOPPY DLGINIT
+BEGIN
+    IDC_DUMP_TO_FLOPPY, 0x403, 3, 0
+0x3a41, "\000" 
+    IDC_DUMP_TO_FLOPPY, 0x403, 3, 0
+0x3a42, "\000" 
+    0
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\HFVExplorer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Finnish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\HFVExplorer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

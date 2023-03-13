@@ -1,0 +1,1 @@
+int RebootWindows( void );
